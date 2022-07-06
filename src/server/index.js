@@ -69,10 +69,9 @@ app.get('/', function (req, res) {
         .then(function (response) {
             console.log(response.data);
             console.log(response.status);
+            res.send(response.data);
         
        })
-       console.log(response);
-       res.send(reponse);
 
     })
 

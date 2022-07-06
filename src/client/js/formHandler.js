@@ -12,11 +12,10 @@ function handleSubmit(event) {
     .then(res => res.json())
     .then(function(res) {
         console.log(res)
-        document.getElementById('results').innerHTML = res.text
+        document.getElementById('results').innerHTML = res.body
     })
     
 }
-
 
 //axios get request
 
